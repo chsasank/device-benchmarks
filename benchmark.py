@@ -1,5 +1,6 @@
 import torch
 import time
+import argparse
 import numpy as np
 try:
     import intel_extension_for_pytorch as ipex
@@ -8,7 +9,18 @@ except ImportError:
     pass
 from torch import mps, cuda
 
-num_trails = 10
+
+
+parser = argparse.ArgumentParser(description='Measure FLOPs and BW.')
+parser.add_argument('--device', type=str, default='cpu',
+                    help='One of cpu | cuda | mps | xpu')
+parser.add_argument('--num_trails', type=int, default=10,
+                    help='Number of trails to get average.')
+args = parser.parse_args()
+
+device = torch.device(args.device)
+num_trails = args.num_trails
+
 
 def flops_benchmark(device):
     test_range = 2 ** np.arange(8, 13, 0.25)
@@ -45,8 +57,8 @@ def synchronize(device):
         pass
 
 
-def memory_bandwidth_benchmark(device, size=1024 * 1024 * 256):  # 256MB
-    test_range = 2 ** (np.arange(20, 28, 0.5))
+def memory_bandwidth_benchmark(device):
+    test_range = 2 ** (np.arange(20, 27, 0.5))
 
     print('size (GB), elapsed_time, bandwidth')
     for size in test_range:
@@ -89,12 +101,6 @@ def memory_bandwidth_benchmark(device, size=1024 * 1024 * 256):  # 256MB
 
 
 if __name__ == "__main__":
-    import argparse
-    parser = argparse.ArgumentParser(description='Measure FLOPs and BW.')
-    parser.add_argument('--device', type=str, default='cpu',
-                        help='One of cpu | cuda | mps')
-    args = parser.parse_args()
-    device = torch.device(args.device)
     print(f'benchmarking {device}')
     flops_benchmark(device)
     memory_bandwidth_benchmark(device)
