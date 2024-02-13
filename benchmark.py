@@ -25,7 +25,7 @@ num_trails = args.num_trails
 def flops_benchmark(device):
     test_range = 2 ** np.arange(8, 13, 0.25)
 
-    print('size, elapsed_time, flops')
+    print('size, elapsed_time, tflops')
     for n in test_range:
         total = 0
         for _ in range(num_trails):
@@ -60,7 +60,7 @@ def synchronize(device):
 def memory_bandwidth_benchmark(device):
     test_range = 2 ** (np.arange(20, 27, 0.5))
 
-    print('size (GB), elapsed_time, bandwidth')
+    print('size (GB), elapsed_time, bandwidth (GB/s)')
     for size in test_range:
         elapsed_time = 0
         for _ in range(num_trails):
