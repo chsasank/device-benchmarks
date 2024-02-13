@@ -43,21 +43,31 @@ case $DEVICE_TYPE in
     ;;
 
   cuda)
-    echo -n "Using CuBlas"
+    echo -n "Using CuBlas (Nvidia)"
     cmake .. -DLLAMA_CUBLAS=ON
     ;;
 
+  rocm)
+    echo -n "Using Rocm (AMD)"
+    AMD_TARGET=$(rocminfo | grep gfx | head -1 | awk '{print $2}')
+    AMD_TARGET=${AMD_TARGET%?}0
+    export CC=/opt/rocm/llvm/bin/clang
+    export CXX=/opt/rocm/llvm/bin/clang++
+    cmake -DLLAMA_HIPBLAS=ON -DAMDGPU_TARGETS=gfx1100 -DCMAKE_BUILD_TYPE=Release ..
+    ;;
+
   sycl)
-    echo -n "Using Sycl"
+    echo -n "Using Sycl (Intel)"
     cmake .. -DLLAMA_SYCL=ON -DCMAKE_C_COMPILER=icx -DCMAKE_CXX_COMPILER=icpx
     ;;
 
   *)
     echo -n "unknown"
+    exit
     ;;
 esac
 
 cmake --build . --config Release -v -j
 cd ..
 
-./build/bin/llama-bench -m ../models/mistral-7b-v0.1.Q4_0.gguf -p 128,256,512 -n 128,256,512
+./build/bin/llama-bench -m $DIR/models/mistral-7b-v0.1.Q4_0.gguf -p 128,256,512 -n 128,256,512
