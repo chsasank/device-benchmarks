@@ -58,9 +58,9 @@ Here's a summary of the data I have collected for different devices
 | Device  | Device Type | TFLOPs (FP32)  | Memory Bandwidth (GB/s) |
 |---|---|---|---|
 | Apple M1 CPU  | CPU | 0.8  | 46 |
-| Apple M1 GPU  | GPU | 1.4  | 90 |
+| Apple M1 GPU  | GPU | 1.4  | 56 |
 | Apple M2 CPU  | CPU | 1  | 60 |
-| Apple M2 GPU  | GPU | 2  | 56 |
+| Apple M2 GPU  | GPU | 2  | 90 |
 | SteamDeck CPU  | CPU | 0.17  | 20 |
 | SteamDeck GPU  | GPU | 1.22  | 69 |
 | Samsung Exynos 2100  | CPU | 0.1  | 16 |
