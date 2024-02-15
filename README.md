@@ -70,6 +70,7 @@ Here's a summary of the data I have collected for different devices
 | Intel i7-1360P | CPU | 0.4 | 24 |
 | Intel i5-12400 | CPU | 0.7 | 26 |
 | Intel i9-13900K (WSL2) | CPU | 1.2 | 49 |
+| Intel Xeon Silver 4116 | CPU | 0.5 | 20 |
 | AMD Ryzen Threadripper 3960X 24-Cores | CPU | 1.4 | 44 |
 | AMD Ryzen Threadripper PRO 5975WX 32-Cores | CPU | 1.5 | 28 |
 | AMD Ryzen 5 4600HS | CPU | 0.4 | 22 |
