@@ -55,32 +55,34 @@ size (GB), elapsed_time, bandwidth
 
 Here's a summary of the data I have collected for different devices
 
-| Device                                    | Device Type | TFLOPs (FP32) | Memory Bandwidth (GB/s) |
-|-------------------------------------------|---|---------------|-------------------------|
-| Apple M1 CPU                              | CPU | 0.8           | 46                      |
-| Apple M1 GPU                              | GPU | 1.4           | 56                      |
-| Apple M2 CPU                              | CPU | 1             | 60                      |
-| Apple M2 GPU                              | GPU | 2             | 90                      |
-| Apple M2 Ultra CPU                        | CPU | 4             | 311                     |
-| Apple M2 Ultra GPU (76 Core)              | GPU | 20            | 636                     |
-| SteamDeck CPU                             | CPU | 0.17          | 20                      |
-| SteamDeck GPU                             | GPU | 1.22          | 69                      |
-| Samsung Exynos 2100                       | CPU | 0.1           | 16                      |
-| Intel i7-8559U                            | CPU | 0.2           | 10                      |
-| Intel i7-1360P                            | CPU | 0.4           | 24                      |
-| Intel i5-12400                            | CPU | 0.7           | 26                      |
-| Intel i9-13900K (WSL2)                    | CPU | 1.2           | 49                      |
-| AMD Ryzen Threadripper 3960X 24-Cores     | CPU | 1.4           | 44                      |
-| AMD Ryzen Threadripper PRO 5975WX 32-Cores | CPU | 1.5           | 28                      |
-| AMD Ryzen 5 4600HS                        | CPU | 0.4           | 22                      |
-| AMD Ryzen 9 5900X                         | CPU | 1.3           | 29                      |
-| AMD Epyc 7763 Engineering Sample          | CPU | 3.2           | 115                     |
-| AMD Epyc 7262                             | CPU | 0.5           | 80                      |
-| Nvidia T4                                 | GPU | 4             | 240                     |
-| Nvidia GeForce GTX 1650 Ti Mobile         | GPU | 3             | 172                     |
-| Intel Arc 770 16GB                        | GPU | 15            | 452                     |
-| Intel Arc 370m                            | GPU | 4             | 93                      |
-| Nvidia 3090                               | GPU | 27            | 831                     |
-| Nvidia 4090                               | GPU | 58            | 912                     |
-| Nvidia 4090 (WSL2)                        | GPU | 53            | 885                     |
-| Radeon RX 7900 XTX                        | GPU | 26            | 792                     |
+| Device | Device Type | TFLOPs (FP32) | Memory Bandwidth (GB/s) |
+|---|---|---|---|
+| Apple M1 CPU | CPU | 0.8 | 46 |
+| Apple M1 GPU | GPU | 1.4 | 56 |
+| Apple M2 CPU | CPU | 1 | 60 |
+| Apple M2 GPU | GPU | 2 | 90 |
+| Apple M2 Ultra CPU | CPU | 4 | 311 |
+| Apple M2 Ultra GPU (76 Core) | GPU | 20 | 636 |
+| SteamDeck CPU | CPU | 0.17 | 20 |
+| SteamDeck GPU | GPU | 1.22 | 69 |
+| Samsung Exynos 2100 | CPU | 0.1 | 16 |
+| Intel i7-8559U | CPU | 0.2 | 10 |
+| Intel i7-1360P | CPU | 0.4 | 24 |
+| Intel i5-12400 | CPU | 0.7 | 26 |
+| Intel i9-13900K (WSL2) | CPU | 1.2 | 49 |
+| AMD Ryzen Threadripper 3960X 24-Cores | CPU | 1.4 | 44 |
+| AMD Ryzen Threadripper PRO 5975WX 32-Cores | CPU | 1.5 | 28 |
+| AMD Ryzen 5 4600HS | CPU | 0.4 | 22 |
+| AMD Ryzen 9 5900X | CPU | 1.3 | 29 |
+| AMD Ryzen 9 7950X  | CPU | 1.1 | 28 |
+| AMD Epyc 7763 Engineering Sample | CPU | 3.2 | 115 |
+| AMD Epyc 7262 | CPU | 0.5 | 80 |
+| Nvidia T4 | GPU | 4 | 240 |
+| Nvidia GeForce GTX 1650 Ti Mobile | GPU | 3 | 172 |
+| Intel Arc 770 16GB | GPU | 15 | 452 |
+| Intel Arc 370m | GPU | 4 | 93 |
+| Nvidia 3090 | GPU | 27 | 831 |
+| Nvidia 4090 | GPU | 58 | 912 |
+| Nvidia 4090 (WSL2) | GPU | 53 | 885 |
+| Nvidia 4090 Super | GPU | 23 | 411 |
+| Radeon RX 7900 XTX | GPU | 26 | 792 |
