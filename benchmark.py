@@ -22,7 +22,7 @@ device = torch.device(args.device)
 num_trails = args.num_trails
 
 
-def flops_benchmark(device):
+def flops_benchmark():
     test_range = 2 ** np.arange(8, 13, 0.25)
 
     print('size, elapsed_time, flops')
@@ -57,7 +57,7 @@ def synchronize(device):
         pass
 
 
-def memory_bandwidth_benchmark(device):
+def memory_bandwidth_benchmark(from_device=device):
     test_range = 2 ** (np.arange(20, 27, 0.5))
 
     print('size (GB), elapsed_time, bandwidth')
@@ -68,7 +68,7 @@ def memory_bandwidth_benchmark(device):
 
             # Create random tensors
             a = torch.rand(size, device=device)
-            b = torch.rand(size, device=device)
+            b = torch.rand(size, device=from_device)
 
             # Warm-up to ensure CUDA kernel is initialized if using GPU
             synchronize(device)
@@ -93,7 +93,12 @@ def memory_bandwidth_benchmark(device):
         elapsed_time = elapsed_time / num_trails
         # Calculate Bandwidth in GB/s
         bytes_copied = a.nelement() * a.element_size()  # bytes
-        bandwidth = 2 * bytes_copied / elapsed_time / 1e9  # GB/s
+        if from_device == device:
+            # because data has transferred from and back
+            factor = 2
+        else:
+            factor = 1
+        bandwidth = factor * bytes_copied / elapsed_time / 1e9  # GB/s
 
         print(bytes_copied / 1e9, elapsed_time, bandwidth, sep=', ')
 
@@ -102,5 +107,5 @@ def memory_bandwidth_benchmark(device):
 
 if __name__ == "__main__":
     print(f'benchmarking {device}')
-    flops_benchmark(device)
-    memory_bandwidth_benchmark(device)
+    flops_benchmark()
+    memory_bandwidth_benchmark()
