@@ -85,5 +85,5 @@ Here's a summary of the data I have collected for different devices
 | Nvidia 3090 | GPU | 27 | 831 |
 | Nvidia 4090 | GPU | 58 | 912 |
 | Nvidia 4090 (WSL2) | GPU | 53 | 885 |
-| Nvidia 4090 Super | GPU | 23 | 411 |
+| Nvidia 4070 Super | GPU | 23 | 411 |
 | Radeon RX 7900 XTX | GPU | 26 | 792 |
