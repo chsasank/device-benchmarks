@@ -53,6 +53,20 @@ size (GB), elapsed_time, bandwidth
 
 ```
 
+Some useful commands:
+
+```
+# for apple gpu
+python benchmark.py --device mps --dtype float32
+
+# for intel gpus with int8
+python benchmark.py --device xpu --dtype int8
+
+# for nvidia gpus with bfloat16
+python benchmark.py --device cuda --dtype bfloat16
+```
+
+
 Here's a summary of the data I have collected for different devices
 
 | Device | Device Type | TFLOPs (FP32) | TFLOPs (BF16) | TOPS (INT8) | Memory Bandwidth (GB/s) |
@@ -62,7 +76,7 @@ Here's a summary of the data I have collected for different devices
 | Apple M1 Pro CPU 10-core | CPU | 0.3 |  |  | 96 |
 | Apple M1 Pro GPU 16-core | GPU | 3.7 |  |  | 176 |
 | Apple M2 CPU | CPU | 1 |  |  | 60 |
-| Apple M2 GPU | GPU | 2 |  |  | 90 |
+| Apple M2 GPU | GPU | 2 | NA | NA | 90 |
 | Apple M2 Ultra CPU | CPU | 4 |  |  | 311 |
 | Apple M2 Ultra GPU (76 Core) | GPU | 20 |  |  | 636 |
 | SteamDeck CPU | CPU | 0.17 |  |  | 20 |
@@ -83,7 +97,7 @@ Here's a summary of the data I have collected for different devices
 | AMD Ryzen 9 7950X | CPU | 1.1 |  |  | 28 |
 | AMD Epyc 7763 Engineering Sample | CPU | 3.2 |  |  | 115 |
 | AMD Epyc 7262 | CPU | 0.5 |  |  | 80 |
-| Nvidia T4 | GPU | 4 |  |  | 240 |
+| Nvidia T4 | GPU | 4 | 2.25 | NA | 240 |
 | Nvidia A100 80GB | GPU | 19 |  |  | 1490 |
 | Nvidia A10 24GB | GPU | 14 |  |  | 469 |
 | Nvidia V100 32GB | GPU | 13 |  |  | 766 |
@@ -95,3 +109,11 @@ Here's a summary of the data I have collected for different devices
 | Nvidia 4090 (WSL2) | GPU | 53 |  |  | 885 |
 | Nvidia 4070 Super | GPU | 23 |  |  | 411 |
 | Radeon RX 7900 XTX | GPU | 26 |  |  | 792 |
+
+
+NA = not available on the device. Usually shows up as error like these:
+
+```
+RuntimeError: "addmm_cuda" not implemented for 'Char'
+RuntimeError: MPS device does not support mm for non-float inputs
+```
