@@ -16,8 +16,11 @@ parser.add_argument('--device', type=str, default='cpu',
                     help='One of cpu | cuda | mps | xpu')
 parser.add_argument('--num_trails', type=int, default=10,
                     help='Number of trails to get average.')
+parser.add_argument('--dtype', type=str, default='float',
+                    help='One of float32|float64|float16|bfloat16|int8|int16|int32|bool')
 args = parser.parse_args()
 
+dtype = getattr(torch, args.dtype)
 device = torch.device(args.device)
 num_trails = args.num_trails
 
@@ -25,12 +28,14 @@ num_trails = args.num_trails
 def flops_benchmark(device):
     test_range = 2 ** np.arange(8, 13, 0.25)
 
-    print('size, elapsed_time, tflops')
+    print(f'benchmarking {device} using {dtype}')
+    print('size, elapsed_time, tops')
     for n in test_range:
         total = 0
         for _ in range(num_trails):
             n = int(n)
-            a = torch.rand(n, n, device=device)
+            a = 10 * torch.rand(n, n, device=device)
+            a = a.to(dtype)
 
             synchronize(device)
             now = time.time()
@@ -101,6 +106,5 @@ def memory_bandwidth_benchmark(device):
 
 
 if __name__ == "__main__":
-    print(f'benchmarking {device}')
     flops_benchmark(device)
     memory_bandwidth_benchmark(device)
