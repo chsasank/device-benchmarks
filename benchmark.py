@@ -58,8 +58,10 @@ def synchronize(device):
 
 
 def memory_bandwidth_benchmark(from_device=device):
+    from_device = torch.device(from_device)
     test_range = 2 ** (np.arange(20, 27, 0.5))
 
+    print(f'measuring bw from {from_device} to {device}')
     print('size (GB), elapsed_time, bandwidth')
     for size in test_range:
         elapsed_time = 0
