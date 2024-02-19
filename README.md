@@ -59,6 +59,8 @@ Here's a summary of the data I have collected for different devices
 |---|---|---|---|
 | Apple M1 CPU | CPU | 0.8 | 46 |
 | Apple M1 GPU | GPU | 1.4 | 56 |
+| Apple M1 Pro CPU 10-core | CPU | 0.34 | 183 |
+| Apple M1 Pro GPU 16-core | GPU | 4.2 | 176 |
 | Apple M2 CPU | CPU | 1 | 60 |
 | Apple M2 GPU | GPU | 2 | 90 |
 | Apple M2 Ultra CPU | CPU | 4 | 311 |
@@ -71,6 +73,9 @@ Here's a summary of the data I have collected for different devices
 | Intel i5-12400 | CPU | 0.7 | 26 |
 | Intel i9-13900K (WSL2) | CPU | 1.2 | 49 |
 | Intel Xeon Silver 4116 | CPU | 0.5 | 20 |
+| Intel Xeon 8358 60-core	| CPU | 3.5 | 587 |
+| Intel Xeon 6330 56-core	| CPU | 6 |	651 |
+| Intel Xeon 6230 40-core	| CPU | 2 |	119 |
 | AMD Ryzen Threadripper 3960X 24-Cores | CPU | 1.4 | 44 |
 | AMD Ryzen Threadripper PRO 5975WX 32-Cores | CPU | 1.5 | 28 |
 | AMD Ryzen 5 4600HS | CPU | 0.4 | 22 |
@@ -79,6 +84,9 @@ Here's a summary of the data I have collected for different devices
 | AMD Epyc 7763 Engineering Sample | CPU | 3.2 | 115 |
 | AMD Epyc 7262 | CPU | 0.5 | 80 |
 | Nvidia T4 | GPU | 4 | 240 |
+| Nvidia A100 80GB | GPU | 18.9 | 1490 |
+| Nvidia A10 24GB | GPU | 17 | 485 |
+| Nvidia V100 32GB | GPU | 13 | 766 |
 | Nvidia GeForce GTX 1650 Ti Mobile | GPU | 3 | 172 |
 | Intel Arc 770 16GB | GPU | 15 | 452 |
 | Intel Arc 370m | GPU | 4 | 93 |
