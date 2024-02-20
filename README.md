@@ -97,7 +97,7 @@ Here's a summary of the data I have collected for different devices
 | Intel Xeon Gold 6330 | CPU | 5.7 |  |  | 81 |
 | Intel Xeon Gold 6230 | CPU | 1.9 |  |  | 17.5 |
 | Intel Xeon Platinum 8358 | CPU | 3.5 |  |  | 96 |
-| AMD 7900 XTX | GPU | 26 |  |  | 792 |
+| AMD 7900 XTX | GPU | 26 | 104 | NA | 792 |
 | Intel Arc 770 16GB | GPU | 15 | 90 | 174 | 452 |
 | Intel Arc 370m | GPU | 4 | 15 | 35 | 93 |
 | Nvidia T4 | GPU | 4 | 2.25 | NA | 240 |
@@ -107,7 +107,7 @@ Here's a summary of the data I have collected for different devices
 | Nvidia 1650 Ti Mobile | GPU | 3 | 1.8 | NA | 172 |
 | Nvidia 3090 | GPU | 27 |  |  | 831 |
 | Nvidia 4070 Super | GPU | 23 |  |  | 411 |
-| Nvidia 4090 | GPU | 58 |  |  | 912 |
+| Nvidia 4090 | GPU | 58 | 168 | NA | 912 |
 | Nvidia 4090 (WSL2) | GPU | 53 |  |  | 885 |
 
 
