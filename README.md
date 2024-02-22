@@ -80,7 +80,7 @@ Here's a summary of the data I have collected for different devices
 | Apple M2 Ultra CPU | CPU | 4 |  |  |  | 311 |
 | Apple M2 Ultra GPU (76 Core) | GPU | 20 |  |  |  | 636 |
 | SteamDeck CPU | CPU | 0.17 |  |  |  | 20 |
-| SteamDeck GPU | GPU | 1.22 |  |  | 69 |
+| SteamDeck GPU | GPU | 1.22 |  |  |  | 69 |
 | Samsung Exynos 2100 | CPU | 0.1 |  |  |  | 16 |
 | AMD Ryzen 5 3600 | CPU | 0.36 |  |  |  | 14 |
 | AMD Ryzen 5 4600HS | CPU | 0.4 |  |  |  | 22 |
