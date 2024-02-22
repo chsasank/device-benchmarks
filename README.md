@@ -69,46 +69,48 @@ python benchmark.py --device cuda --dtype bfloat16
 
 Here's a summary of the data I have collected for different devices
 
-| Device | Device Type | TFLOPs (FP32) | TFLOPs (BF16) | TOPS (INT8) | Memory Bandwidth (GB/s) |
-|---|---|---|---|---|---|
-| Apple M1 CPU | CPU | 0.8 |  |  | 46 |
-| Apple M1 GPU | GPU | 1.4 |  |  | 56 |
-| Apple M1 Pro CPU 10-core | CPU | 0.3 |  |  | 96 |
-| Apple M1 Pro GPU 16-core | GPU | 3.7 |  |  | 176 |
-| Apple M2 CPU | CPU | 1 |  |  | 60 |
-| Apple M2 GPU | GPU | 2 | NA | NA | 90 |
-| Apple M2 Ultra CPU | CPU | 4 |  |  | 311 |
-| Apple M2 Ultra GPU (76 Core) | GPU | 20 |  |  | 636 |
-| SteamDeck CPU | CPU | 0.17 |  |  | 20 |
-| SteamDeck GPU | GPU | 1.22 |  |  | 69 |
-| Samsung Exynos 2100 | CPU | 0.1 |  |  | 16 |
-| AMD Ryzen 5 4600HS | CPU | 0.4 |  |  | 22 |
-| AMD Ryzen 9 5900X | CPU | 1.3 |  |  | 29 |
-| AMD Ryzen 9 7950X | CPU | 1.1 |  |  | 28 |
-| AMD Ryzen Threadripper 3960X 24-Cores | CPU | 1.4 |  |  | 44 |
-| AMD Ryzen Threadripper PRO 5975WX 32-Cores | CPU | 1.5 |  |  | 28 |
-| AMD Epyc 7763 Engineering Sample | CPU | 3.2 |  |  | 115 |
-| AMD Epyc 7262 | CPU | 0.5 |  |  | 80 |
-| Intel i5-12400 | CPU | 0.7 | 0.003 | 0.05 | 26 |
-| Intel i7-8559U | CPU | 0.2 |  |  | 10 |
-| Intel i7-1360P | CPU | 0.4 | 0.003 | 0.06 | 24 |
-| Intel i9-13900K (WSL2) | CPU | 1.2 |  |  | 49 |
-| Intel Xeon Silver 4116 | CPU | 0.5 |  |  | 20 |
-| Intel Xeon Gold 6330 | CPU | 5.7 |  |  | 81 |
-| Intel Xeon Gold 6230 | CPU | 1.9 |  |  | 17.5 |
-| Intel Xeon Platinum 8358 | CPU | 3.5 |  |  | 96 |
-| AMD 7900 XTX | GPU | 26 | 104 | NA | 792 |
-| Intel Arc 770 16GB | GPU | 15 | 90 | 174 | 452 |
-| Intel Arc 370m | GPU | 4 | 15 | 35 | 93 |
-| Nvidia T4 | GPU | 4 | 2.25 | NA | 240 |
-| Nvidia A10 24GB | GPU | 14 |  |  | 469 |
-| Nvidia A100 80GB | GPU | 19 |  |  | 1490 |
-| Nvidia V100 32GB | GPU | 13 |  |  | 766 |
-| Nvidia 1650 Ti Mobile | GPU | 3 | 1.8 | NA | 172 |
-| Nvidia 3090 | GPU | 27 |  |  | 831 |
-| Nvidia 4070 Super | GPU | 23 |  |  | 411 |
-| Nvidia 4090 | GPU | 58 | 168 | NA | 912 |
-| Nvidia 4090 (WSL2) | GPU | 53 |  |  | 885 |
+| Device | Device Type | TFLOPs (FP32) | TFLOPs (FP16)| TFLOPs (BF16) | TOPS (INT8) | Memory Bandwidth (GB/s) |
+|---|---|---|---|---|---|---|
+| Apple M1 CPU | CPU | 0.8 |  |  |  |  | 46 |
+| Apple M1 GPU | GPU | 1.4 |  |  |  |  | 56 |
+| Apple M1 Pro CPU 10-core | CPU | 0.3 |  |  | 0.008  | 96 |
+| Apple M1 Pro GPU 16-core | GPU | 3.7 | 4.3 |  |  | 176 |
+| Apple M2 CPU | CPU | 1 |    ||  | 60 |
+| Apple M2 GPU | GPU | 2 |  | NA | NA | 90 |
+| Apple M2 Ultra CPU | CPU | 4 |  |  |  | 311 |
+| Apple M2 Ultra GPU (76 Core) | GPU | 20 |  |  |  | 636 |
+| SteamDeck CPU | CPU | 0.17 |  |  |  | 20 |
+| SteamDeck GPU | GPU | 1.22 |  |  |  | 69 |
+| Samsung Exynos 2100 | CPU | 0.1 |  |  |  | 16 |
+| AMD Ryzen 5 3600 | CPU | 0.36 |  |  |  | 14 |
+| AMD Ryzen 5 4600HS | CPU | 0.4 |  |  |  | 22 |
+| AMD Ryzen 9 5900X | CPU | 1.3 |  |  |  | 29 |
+| AMD Ryzen 9 7950X | CPU | 1.1 |  |  |  | 28 |
+| AMD Ryzen Threadripper 3960X 24-Cores | CPU | 1.4 |  |  |  | 44 |
+| AMD Ryzen Threadripper PRO 5975WX 32-Cores | CPU | 1.5 |  |  |  | 28 |
+| AMD Epyc 7763 Engineering Sample | CPU | 3.2 |  |  |  | 115 |
+| AMD Epyc 7262 | CPU | 0.5 |  |  |  | 80 |
+| Intel i5-12400 | CPU | 0.7 |  | 0.003 | 0.05 | 26 |
+| Intel i7-8559U | CPU | 0.2 |  |  |  | 10 |
+| Intel i7-1360P | CPU | 0.4 |  | 0.003 | 0.06 | 24 |
+| Intel i9-13900K (WSL2) | CPU | 1.2 |  |  |  | 49 |
+| Intel Xeon Silver 4116 | CPU | 0.5 |  |  |  | 20 |
+| Intel Xeon Gold 6230 | CPU | 1.9 | NA | 0.61 | 0.014 | 17.5 |
+| Intel Xeon Gold 6330 | CPU | 5.7 | NA | 0.75 | 0.02 | 81 |
+| Intel Xeon Platinum 8358 | CPU | 3.5 |  | 0.96 | 0.029  | 96 |
+| AMD 7900 XTX | GPU | 26 |  | 104 | NA | 792 |
+| Intel Arc 770 16GB | GPU | 15 |  | 90 | 174 | 452 |
+| Intel Arc 370m | GPU | 4 |  | 15 | 35 | 93 |
+| Nvidia T4 | GPU | 4 |  | 2.25 | NA | 240 |
+| Nvidia A10 24GB | GPU | 14 | 54 | 56 | NA | 469 |
+| Nvidia A100 80GB | GPU | 19 | 32 | 33 | NA | 1490 |
+| Nvidia V100 32GB | GPU | 13 | 84 | 9.4 | NA  | 766 |
+| Nvidia 1650 Ti Mobile | GPU | 3 |  | 1.8 | NA | 172 |
+| Nvidia 2070S | GPU | 8 | 37 | 5 | NA | 831 |
+| Nvidia 3090 | GPU | 27 |  |  |  | 831 |
+| Nvidia 4070 Super | GPU | 23 |  |  |  | 411 |
+| Nvidia 4090 | GPU | 58 |  | 168 | NA | 912 |
+| Nvidia 4090 (WSL2) | GPU | 53 |  |  |  | 885 |
 
 
 NA = not available on the device. Usually shows up as error like these:
