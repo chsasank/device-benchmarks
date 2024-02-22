@@ -95,14 +95,14 @@ Here's a summary of the data I have collected for different devices
 | Intel i7-1360P | CPU | 0.4 |  | 0.003 | 0.06 | 24 |
 | Intel i9-13900K (WSL2) | CPU | 1.2 |  |  |  | 49 |
 | Intel Xeon Silver 4116 | CPU | 0.5 |  |  |  | 20 |
-| Intel Xeon Gold 6330 | CPU | 5.7 | NA | 0.75 | 0.02 | 81 |
 | Intel Xeon Gold 6230 | CPU | 1.9 | NA | 0.61 | 0.014 | 17.5 |
-| Intel Xeon Platinum 8358 | CPU | 3.5 |  |  |  | 96 |
+| Intel Xeon Gold 6330 | CPU | 5.7 | NA | 0.75 | 0.02 | 81 |
+| Intel Xeon Platinum 8358 | CPU | 3.5 |  | 0.96 | 0.029  | 96 |
 | AMD 7900 XTX | GPU | 26 |  | 104 | NA | 792 |
 | Intel Arc 770 16GB | GPU | 15 |  | 90 | 174 | 452 |
 | Intel Arc 370m | GPU | 4 |  | 15 | 35 | 93 |
 | Nvidia T4 | GPU | 4 |  | 2.25 | NA | 240 |
-| Nvidia A10 24GB | GPU | 14 |  |  |  | 469 |
+| Nvidia A10 24GB | GPU | 14 | 54 | 56 | NA | 469 |
 | Nvidia A100 80GB | GPU | 19 | 32 | 33 | NA | 1490 |
 | Nvidia V100 32GB | GPU | 13 | 84 | 9.4 | NA  | 766 |
 | Nvidia 1650 Ti Mobile | GPU | 3 |  | 1.8 | NA | 172 |
