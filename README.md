@@ -79,8 +79,8 @@ Here's a summary of the data I have collected for different devices
 | Apple M2 GPU | GPU | 2 |  | NA | NA | 90 |
 | Apple M2 Ultra CPU | CPU | 4 |  |  |  | 311 |
 | Apple M2 Ultra GPU (76 Core) | GPU | 20 |  |  |  | 636 |
-| SteamDeck CPU | CPU | 0.17 |  |  |  | 20 |
-| SteamDeck GPU | GPU | 1.22 |  |  |  | 69 |
+| SteamDeck CPU | CPU | 0.17 | 0.002 | 0.002 | 0.05 | 20 |
+| SteamDeck GPU | GPU | 1.22 | 2.2 | 0.5 | NA | 69 |
 | Samsung Exynos 2100 | CPU | 0.1 |  |  |  | 16 |
 | AMD Ryzen 5 3600 | CPU | 0.36 |  |  |  | 14 |
 | AMD Ryzen 5 4600HS | CPU | 0.4 |  |  |  | 22 |
@@ -98,8 +98,8 @@ Here's a summary of the data I have collected for different devices
 | Intel Xeon Gold 6230 | CPU | 1.9 | NA | 0.61 | 0.014 | 17.5 |
 | Intel Xeon Gold 6330 | CPU | 5.7 | NA | 0.75 | 0.02 | 81 |
 | Intel Xeon Platinum 8358 | CPU | 3.5 |  | 0.96 | 0.029  | 96 |
-| AMD 7900 XTX | GPU | 26 |  | 104 | NA | 792 |
-| Intel Arc 770 16GB | GPU | 15 |  | 90 | 174 | 452 |
+| AMD 7900 XTX | GPU | 26 | 101 | 104 | NA | 792 |
+| Intel Arc 770 16GB | GPU | 15 | 86 | 90 | 174 | 452 |
 | Intel Arc 370m | GPU | 4 |  | 15 | 35 | 93 |
 | Nvidia T4 | GPU | 4 |  | 2.25 | NA | 240 |
 | Nvidia A10 24GB | GPU | 14 | 54 | 56 | NA | 469 |
@@ -109,7 +109,7 @@ Here's a summary of the data I have collected for different devices
 | Nvidia 2070S | GPU | 8 | 37 | 5 | NA | 831 |
 | Nvidia 3090 | GPU | 27 |  |  |  | 831 |
 | Nvidia 4070 Super | GPU | 23 |  |  |  | 411 |
-| Nvidia 4090 | GPU | 58 |  | 168 | NA | 912 |
+| Nvidia 4090 | GPU | 58 | 150 | 168 | NA | 912 |
 | Nvidia 4090 (WSL2) | GPU | 53 |  |  |  | 885 |
 
 
