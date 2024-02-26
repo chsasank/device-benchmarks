@@ -98,9 +98,11 @@ Here's a summary of the data I have collected for different devices
 | Intel Xeon Gold 6230 | CPU | 1.9 | NA | 0.61 | 0.014 | 17.5 |
 | Intel Xeon Gold 6330 | CPU | 5.7 | NA | 0.75 | 0.02 | 81 |
 | Intel Xeon Platinum 8358 | CPU | 3.5 |  | 0.96 | 0.029  | 96 |
+| Intel Xeon Platinum 8358 | CPU | 5.6 | NA | 14 | 0.04 | 137 |
 | AMD 7900 XTX | GPU | 26 | 101 | 104 | NA | 792 |
 | Intel Arc 770 16GB | GPU | 15 | 86 | 90 | 174 | 452 |
 | Intel Arc 370m | GPU | 4 |  | 15 | 35 | 93 |
+| Intel Data Center GPU Max 1100 | GPU | 21 | 140 | 140 | 221 | 781 |
 | Nvidia T4 | GPU | 4 |  | 2.25 | NA | 240 |
 | Nvidia A10 24GB | GPU | 14 | 54 | 56 | NA | 469 |
 | Nvidia A100 80GB | GPU | 19 | 32 | 33 | NA | 1490 |
