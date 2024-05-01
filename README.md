@@ -79,6 +79,7 @@ Here's a summary of the data I have collected for different devices
 | Apple M2 GPU | GPU | 2 |  | NA | NA | 90 |
 | Apple M2 Ultra CPU | CPU | 4 |  |  |  | 311 |
 | Apple M2 Ultra GPU (76 Core) | GPU | 20 |  |  |  | 636 |
+| Apple M3 Max GPU (40 Core) | GPU | 11.4 |  |  |  | 318 |
 | SteamDeck CPU | CPU | 0.17 | 0.002 | 0.002 | 0.05 | 20 |
 | SteamDeck GPU | GPU | 1.22 | 2.2 | 0.5 | NA | 69 |
 | Samsung Exynos 2100 | CPU | 0.1 |  |  |  | 16 |
