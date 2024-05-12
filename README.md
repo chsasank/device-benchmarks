@@ -93,6 +93,7 @@ Here's a summary of the data I have collected for different devices
 | AMD Epyc 7262 | CPU | 0.5 |  |  |  | 80 |
 | Intel i5-12400 | CPU | 0.7 |  | 0.003 | 0.05 | 26 |
 | Intel i7-8559U | CPU | 0.2 |  |  |  | 10 |
+| Intel i7-8750H | CPU | 0.5 |  |  |  | 15 |
 | Intel i7-1360P | CPU | 0.4 |  | 0.003 | 0.06 | 24 |
 | Intel i9-13900K (WSL2) | CPU | 1.2 |  |  |  | 49 |
 | Intel Xeon Silver 4116 | CPU | 0.5 |  |  |  | 20 |
@@ -108,6 +109,7 @@ Here's a summary of the data I have collected for different devices
 | Nvidia A10 24GB | GPU | 14 | 54 | 56 | NA | 469 |
 | Nvidia A100 80GB | GPU | 19 | 32 | 33 | NA | 1490 |
 | Nvidia V100 32GB | GPU | 13 | 84 | 9.4 | NA  | 766 |
+| Nvidia 1050 Ti Mobile | GPU | 1.8 |1.5  | 1 | NA | 97 |
 | Nvidia 1650 Ti Mobile | GPU | 3 |  | 1.8 | NA | 172 |
 | Nvidia 2070S | GPU | 8 | 37 | 5 | NA | 831 |
 | Nvidia 3090 | GPU | 27 |  |  |  | 831 |
