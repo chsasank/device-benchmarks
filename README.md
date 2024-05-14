@@ -113,6 +113,7 @@ Here's a summary of the data I have collected for different devices
 | Nvidia 1650 Ti Mobile | GPU | 3 |  | 1.8 | NA | 172 |
 | Nvidia 2070S | GPU | 8 | 37 | 5 | NA | 831 |
 | Nvidia 3090 | GPU | 27 |  |  |  | 831 |
+| Nvidia 4060ti | GPU | 12 | 42 | 46 | NA | 234 |
 | Nvidia 4070 Super | GPU | 23 |  |  |  | 411 |
 | Nvidia 4090 | GPU | 58 | 150 | 168 | NA | 912 |
 | Nvidia 4090 (WSL2) | GPU | 53 |  |  |  | 885 |
