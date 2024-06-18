@@ -110,6 +110,7 @@ Here's a summary of the data I have collected for different devices
 | Nvidia A100 80GB | GPU | 19 | 32 | 33 | NA | 1490 |
 | Nvidia V100 32GB | GPU | 13 | 84 | 9.4 | NA  | 766 |
 | Nvidia 1050 Ti Mobile | GPU | 1.8 |1.5  | 1 | NA | 97 |
+| Nvidia 1060 Ti Mobile | GPU | 3.8 | 17.6  | 2.18 | NA | 222 |
 | Nvidia 1650 Ti Mobile | GPU | 3 |  | 1.8 | NA | 172 |
 | Nvidia 2070S | GPU | 8 | 37 | 5 | NA | 831 |
 | Nvidia 3090 | GPU | 27 |  |  |  | 831 |
