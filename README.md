@@ -96,6 +96,7 @@ Here's a summary of the data I have collected for different devices
 | Intel i7-8750H | CPU | 0.5 |  |  |  | 15 |
 | Intel i7-1360P | CPU | 0.4 |  | 0.003 | 0.06 | 24 |
 | Intel i9-13900K (WSL2) | CPU | 1.2 |  |  |  | 49 |
+| Intel i9-12950HX | CPU | 0.6 | | | | 40 |
 | Intel Xeon Silver 4116 | CPU | 0.5 |  |  |  | 20 |
 | Intel Xeon Gold 6230 | CPU | 1.9 | NA | 0.61 | 0.014 | 17.5 |
 | Intel Xeon Gold 6330 | CPU | 5.7 | NA | 0.75 | 0.02 | 81 |
@@ -114,6 +115,7 @@ Here's a summary of the data I have collected for different devices
 | Nvidia 1060 Ti Mobile | GPU | 3.8 | 17.6  | 2.18 | NA | 222 |
 | Nvidia 1650 Ti Mobile | GPU | 3 |  | 1.8 | NA | 172 |
 | Nvidia 2070S | GPU | 8 | 37 | 5 | NA | 831 |
+| Nvidia 3080 Ti Mobile | GPU | 13 | 46 | 45 | NA | 475 |
 | Nvidia 3090 | GPU | 27 |  |  |  | 831 |
 | Nvidia 4060ti | GPU | 12 | 42 | 46 | NA | 234 |
 | Nvidia 4070 Super | GPU | 23 |  |  |  | 411 |
