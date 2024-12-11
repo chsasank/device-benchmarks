@@ -107,6 +107,7 @@ Here's a summary of the data I have collected for different devices
 | Intel Arc 370m | GPU | 4 |  | 15 | 35 | 93 |
 | Intel Data Center GPU Max 1100 | GPU | 21 | 140 | 140 | 221 | 781 |
 | Nvidia T4 | GPU | 4 | 25 | 2.25 | NA | 240 |
+| Nvidia L4 | GPU | 12 | 65 | 66 | NA | 235 |
 | Nvidia V100 32GB | GPU | 13 | 84 | 9.4 | NA  | 766 |
 | Nvidia A10 24GB | GPU | 14 | 54 | 56 | NA | 469 |
 | Nvidia A100 80GB | GPU | 19 | 189 | 237 | NA | 1490 |
