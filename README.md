@@ -121,6 +121,7 @@ Here's a summary of the data I have collected for different devices
 | Nvidia 4060ti | GPU | 12 | 42 | 46 | NA | 234 |
 | Nvidia 4070 Super | GPU | 23 |  |  |  | 411 |
 | Nvidia 4070 Ti Super | GPU | 31 | 91 | 89 | NA | 602 |
+| Nvidia 5070 Ti | GPU | 32 | 98 | 98 | NA | 762 |
 | Nvidia 4090 | GPU | 58 | 150 | 168 | NA | 912 |
 | Nvidia 4090 (WSL2) | GPU | 53 |  |  |  | 885 |
 
