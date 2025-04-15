@@ -118,6 +118,7 @@ Here's a summary of the data I have collected for different devices
 | Nvidia 1060 Ti Mobile | GPU | 3.8 | 17.6  | 2.18 | NA | 222 |
 | Nvidia 1650 Ti Mobile | GPU | 3 |  | 1.8 | NA | 172 |
 | Nvidia 2070S | GPU | 8 | 37 | 5 | NA | 831 |
+| Nvidia 3060 12 GB | GPU | 7.4 | 26 | 26 | NA | 330 |
 | Nvidia 3080 Ti Mobile | GPU | 13 | 46 | 45 | NA | 475 |
 | Nvidia 3090 | GPU | 27 |  |  |  | 831 |
 | Nvidia 4060ti | GPU | 12 | 42 | 46 | NA | 234 |
