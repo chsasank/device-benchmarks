@@ -8,7 +8,7 @@ try:
 except ImportError:
     pass
 from torch import mps, cuda
-
+from datetime import datetime
 
 
 parser = argparse.ArgumentParser(description='Measure FLOPs and BW.')
@@ -29,7 +29,7 @@ def flops_benchmark(device):
     test_range = 2 ** np.arange(8, 13, 0.25)
 
     print(f'benchmarking {device} using {dtype}')
-    print('size, elapsed_time, tops')
+    print('size, elapsed_time, tops, date_and_time')
     for n in test_range:
         total = 0
         for _ in range(num_trails):
@@ -48,7 +48,7 @@ def flops_benchmark(device):
 
         tflops = 2 * n**3 / total / 1e12
 
-        print(n, total, tflops, sep=", ")
+        print(n, total, tflops, datetime.now(), sep=", ")
 
 
 def synchronize(device):
@@ -65,7 +65,7 @@ def synchronize(device):
 def memory_bandwidth_benchmark(device):
     test_range = 2 ** (np.arange(20, 27, 0.5))
 
-    print('size (GB), elapsed_time, bandwidth (GB/s)')
+    print('size (GB), elapsed_time, bandwidth (GB/s), date_and_time')
     for size in test_range:
         elapsed_time = 0
         for _ in range(num_trails):
@@ -100,7 +100,7 @@ def memory_bandwidth_benchmark(device):
         bytes_copied = a.nelement() * a.element_size()  # bytes
         bandwidth = 2 * bytes_copied / elapsed_time / 1e9  # GB/s
 
-        print(bytes_copied / 1e9, elapsed_time, bandwidth, sep=', ')
+        print(bytes_copied / 1e9, elapsed_time, bandwidth, datetime.now(), sep=', ')
 
     return bandwidth
 
