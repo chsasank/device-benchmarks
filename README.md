@@ -4,6 +4,28 @@ Benchmarks of different devices I have come across. This repo is migrated from t
 
 I will maintain interesting benchmarks of different devices of I have come across.
 
+## LLVM Compilation Benchmark
+
+`llvm_bench.sh` builds LLVM (including Clang) from source as a realistic, long-running CPU benchmark. It clones `llvm-project`, configures a Release build for the host target only, and does a clean full parallel build (`-j$(nproc)` by default). The script prints the elapsed build time in seconds.
+
+Usage:
+
+```
+./llvm_bench.sh [device_type] [work_dir] [jobs] [llvm_version]
+```
+
+Examples:
+
+```
+# Defaults: cpu, temp dir, nproc jobs, llvmorg-19.1.0
+./llvm_bench.sh
+
+# Custom everything
+./llvm_bench.sh cpu /tmp/llvm-bench 32 llvmorg-18.1.8
+```
+
+Requirements: `git`, `cmake`, and either `ninja` or `make`. Expect several GB of disk space and potentially 10s of minutes to hours depending on the machine.
+
 ## Matrix Multiplication FLOPS and BW
 
 I have written a quick script in PyTorch to benchmark GPUs and CPUs. I use fp32 matrix multiplication to measure FLOPs (floating point operations per second). I copy a large tensor to measure bandwidth. These two are the most important metrics for LLM inference. Read [this blog](https://chsasank.com/llm-system-design.html) for more details on this.
