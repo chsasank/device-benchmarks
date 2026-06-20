@@ -3,7 +3,7 @@
 set -e
 
 DEVICE_TYPE=${1:-cpu}
-WORK_DIR=${2:-$(mktemp -d)}
+WORK_DIR=${2:-./tmp/llvm-bench}
 JOBS=${3:-$(nproc)}
 LLVM_VERSION=${4:-llvmorg-19.1.0}
 

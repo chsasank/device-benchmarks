@@ -17,7 +17,7 @@ Usage:
 Examples:
 
 ```
-# Defaults: cpu, temp dir, nproc jobs, llvmorg-19.1.0
+# Defaults: cpu, ./tmp/llvm-bench, nproc jobs, llvmorg-19.1.0
 ./llvm_bench.sh
 
 # Custom everything
