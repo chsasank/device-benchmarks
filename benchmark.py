@@ -34,8 +34,7 @@ def flops_benchmark(device):
         total = 0
         for _ in range(num_trails):
             n = int(n)
-            a = 10 * torch.rand(n, n, device=device)
-            a = a.to(dtype)
+            a = (10 * torch.rand(n, n)).to(dtype).to(device)
 
             synchronize(device)
             now = time.time()
