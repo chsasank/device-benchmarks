@@ -84,7 +84,7 @@ python benchmark.py --device mps --dtype float32
 # for intel gpus with int8
 python benchmark.py --device xpu --dtype int8
 
-# for nvidia gpus with bfloat16
+# for nvidia and amd gpus (same keyword cuda works if built using rocm support) with bfloat16
 python benchmark.py --device cuda --dtype bfloat16
 ```
 
@@ -127,9 +127,11 @@ Here's a summary of the data I have collected for different devices
 | Intel Xeon Platinum 8358 | CPU | 3.5 |  | 0.96 | 0.029  | 96 |
 | Intel Xeon Platinum 8358 | CPU | 5.6 | NA | 14 | 0.04 | 137 |
 | AMD 7900 XTX | GPU | 26 | 101 | 104 | NA | 792 |
+| AMD Instinct MI210 | GPU | 33 | 121.68 | 125.14 | NA | 1273.5 |
 | Intel Arc 770 16GB | GPU | 15 | 86 | 90 | 174 | 452 |
 | Intel Arc 370m | GPU | 4 |  | 15 | 35 | 93 |
 | Intel Data Center GPU Max 1100 | GPU | 21 | 140 | 140 | 221 | 781 |
+| Nvidia P40 | GPU | 9.3 | 9.75 | 4.45 | NA | 285 |
 | Nvidia T4 | GPU | 4 | 25 | 2.25 | NA | 240 |
 | Nvidia L4 | GPU | 12 | 65 | 66 | NA | 235 |
 | Nvidia V100 32GB | GPU | 13 | 84 | 9.4 | NA  | 766 |
@@ -137,7 +139,9 @@ Here's a summary of the data I have collected for different devices
 | Nvidia RTX 4000 Ada 20GB | GPU | 16 | 78 | 79 | NA | 300 |
 | Nvidia RTX 4500 Ada 24GB | GPU | 23.5 | 125 | 127 | NA | 378 |
 | Nvidia A100 80GB | GPU | 19 | 189 | 237 | NA | 1490 |
+| Nvidia A100 80GB (8x GCP Cloud VM) | GPU | 18.9 | 209.5 | 220.1 | NA | 1677.9 |
 | Nvidia H100-PCIe 80GB | GPU | 38 | 435 | 449 | NA  | 1630 |
+| Nvidia H100 80GB (8x GCP Cloud VM) | GPU | 49.8 | 728.8 | 743.5 | NA  | 2864.8 |
 | Nvidia 1050 Ti Mobile | GPU | 1.8 |1.5  | 1 | NA | 97 |
 | Nvidia 1060 Ti Mobile | GPU | 3.8 | 17.6  | 2.18 | NA | 222 |
 | Nvidia 1650 Ti Mobile | GPU | 3 |  | 1.8 | NA | 172 |
