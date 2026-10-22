@@ -152,6 +152,7 @@ Here's a summary of the data I have collected for different devices
 | Nvidia 5070 Ti | GPU | 32 | 98 | 98 | NA | 762 |
 | Nvidia 4090 | GPU | 58 | 150 | 168 | NA | 912 |
 | Nvidia 4090 (WSL2) | GPU | 53 |  |  |  | 885 |
+| Intel Arc Pro B60 24GB | GPU | 12 | 81 | 90 | 172 | 394 |
 
 
 NA = not available on the device. Usually shows up as error like these:
